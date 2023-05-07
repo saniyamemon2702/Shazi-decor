@@ -1,0 +1,293 @@
+/* clearing deafaults  */
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/*Body Selector...*/
+body {
+  background-image: url("../Images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-blend-mode: lighten; */
+}
+
+/* Heading fonts */
+.headfonts {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #085469;
+}
+
+/* Paragraph fonts */
+.parafonts {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  text-align: justify;
+  color: #085469;
+  line-height: 150%;
+}
+
+/* ----------------------------------------------------------------Wrapper Class ------------------------------------------ */
+#wrapper {
+  width: 90%;
+  height: 90%;
+  box-shadow: 0.4em 0.4em 1.2em #737c7b;
+  /* overflow: auto; */
+
+  display: flex;
+  flex-direction: column;
+}
+
+/*---------------------------------------navigation Part---------------------------------------------*/
+nav {
+  margin: 1em;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Logo image  */
+nav img {
+  margin: 0.5em;
+  height: 3.5em;
+  width: 2.5em;
+}
+
+/* navigation ul   */
+nav ul {
+  margin-left: auto;
+  /* border: 2px solid red; */
+}
+
+/* navigation  menu items-li contained within ul */
+nav li {
+  display: inline;
+  list-style: none;
+  padding-left: 1em;
+}
+
+/* navigation's <a> tag within li and main's Read more text having <a> tag*/
+nav a,
+main a {
+  text-decoration: none;
+}
+
+/*Navigation's product's Dropdown items contains- living room, dining room, bedroom etc.*/
+.dropdown {
+  display: inline;
+}
+
+.dropdown-content {
+  display: none;
+  margin-left: 5em;
+  position: absolute;
+  background-color: transparent;
+  font-weight: normal;
+}
+.dropdown-content a {
+  color: #085469;
+  text-decoration: none;
+  display: block;
+  font-weight: normal;
+  text-align: center;
+  font-size: 1em;
+}
+.dropdown-content a:hover {
+  background-color: #085469;
+  color: #e4e4e4;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* hamburger icon- currently invisible. will visible on mobile view */
+nav svg {
+  display: none;
+  color: #085469;
+}
+
+/*---------------------------------------main Part---------------------------------------------*/
+main {
+  width: 80%;
+  margin: 5em 2em;
+  /* border: 2px solid red; */
+}
+
+main h2,
+main p {
+  padding: 0.5em;
+}
+
+/*--------------------------------------- anchor tag effects---------------------------------------------*/
+nav li a:hover {
+  font-size: 1.25em;
+  border-bottom: 1px solid #085469;
+}
+
+nav li a:visited {
+  border: 1px solid #085469;
+}
+
+/*--------------------------------------- footer---------------------------------------------*/
+footer {
+  margin-top: auto;
+  margin-left: 2em;
+  width: 90%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid red; */
+}
+.socialMedia {
+  display: inline;
+  margin-left: auto;
+  margin-top: auto;
+  /* border: 2px solid red; */
+}
+
+.socialMedia a {
+  color: #085469;
+  margin-left: 0.5em;
+  font-size: 1.75em;
+  /* border: 2px solid red; */
+}
+
+/*--------------------------------------- media query---------------------------------------------*/
+
+/* for tablet view */
+@media only screen and (max-width: 1024px) {
+  /* body selector for adjusting backgroung image in tablet view */
+  body {
+    background-size: 120% 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* main part */
+  main {
+    width: 90%;
+    /* border: 2px solid red; */
+    margin-top: 0em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* for mobile view */
+@media only screen and (max-width: 768px) {
+  /* body selector for adjusting backgroung image in mobile view */
+  body {
+    background-size: 200% 120%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #wrapper {
+    margin: 4em 3em;
+    height: fit-content;
+  }
+  /* Navigation */
+
+  /* in mobile mode, whole menu within ul will not be visible. instead, hamburger icon will b shown */
+  nav ul {
+    display: none;
+  }
+
+  nav svg {
+    display: inline;
+    margin-top: auto;
+  }
+  /* for hamburger menu that contains home, products, about and contact links */
+  .dropdown {
+    margin-left: auto;
+  }
+  .dropdown-content {
+    background-color: #e4e4e4;
+    margin-left: -3em;
+    margin-top: -3em;
+  }
+  .dropdown-content a {
+    text-align: right;
+    font-size: 1.2em;
+  }
+
+  #close:hover {
+    color: #085469;
+    background-color: transparent;
+  }
+
+  /* for products dropdown menu contains kithen, bedroom etc */
+  .hamDropdown {
+    display: inline;
+  }
+
+  .hamDropdown-content {
+    display: none;
+    margin-left: -6.5em;
+    margin-top: -2.2em;
+    position: absolute;
+    background-color: transparent;
+    font-weight: normal;
+    padding: 00.2em;
+    background-color: #e4e4e4;
+    /* border: 1px solid #085469; */
+    box-shadow: 0.1em 0.1em 0.5em #085469;
+  }
+  .hamDropdown-content a {
+    color: #085469;
+    padding: 00.1em;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+    text-align: right;
+    /* font-size: 1em; */
+  }
+  .hamDropdown-content a:hover {
+    background-color: #085469;
+    color: #e4e4e4;
+  }
+
+  .hamDropdown:hover .hamDropdown-content {
+    display: block;
+  }
+
+  /* main  */
+  main {
+    width: 90%;
+    margin-top: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 2px solid; */
+  }
+
+  /* footer */
+  footer {
+    /* margin: 0em; */
+    /* margin-top: auto; */
+    margin: auto;
+    padding: 0em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer p {
+    text-align: center;
+  }
+  .socialMedia {
+    margin-left: 0em;
+    display: block;
+    /* border: 2px solid; */
+    /* align-self: center; */
+    /* margin-left: auto; */
+  }
+}

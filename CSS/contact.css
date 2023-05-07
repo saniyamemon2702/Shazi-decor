@@ -1,0 +1,102 @@
+body {
+  height: fit-content;
+  background-image: url("../Images/background2.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-position: center;
+}
+#wrapper {
+  margin: 3em 3em;
+}
+main {
+  margin: 0em 2em;
+  padding: 0em;
+  width: 90%;
+  align-self: center;
+  /* border: 2px solid red; */
+}
+section {
+  margin-top: 1em;
+}
+form {
+  /* border: 2px solid; */
+  margin: 1em 0em;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 3fr 9fr;
+  width: 60%;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #085469;
+  border-right: 2px solid #085469;
+  border-radius: 0.3em;
+  box-shadow: 0.1em 0.1em #085469;
+}
+
+.btn {
+  /* background-color: #085469; */
+  color: #085469;
+  padding: 0.3em;
+  text-align: center;
+  border: 2px solid #085469;
+  border-radius: 0.5em;
+  box-shadow: 0em 0em;
+}
+
+#reset {
+  width: 33.333%;
+}
+.btn:hover {
+  background-color: #eeebeb;
+  box-shadow: 0.1em 0.1em #085469;
+}
+.btn:active {
+  background-color: #085469;
+  color: #e4e4e4;
+}
+
+dt {
+  margin-top: 1em;
+}
+dd a {
+  color: #085469;
+  text-align: justify;
+}
+
+footer {
+  margin-top: 1em;
+}
+/* ---------------------media Queries------------------------------------------------------------- */
+/* for tablet view */
+/* for tablet view */
+@media only screen and (max-width: 1024px) {
+  /* body selector for adjusting backgroung image in tablet view */
+  body {
+    background-size: 150% 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  form {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* body selector for adjusting backgroung image in mobile view */
+  body {
+    background-size: 200% 120%;
+    align-items: center;
+    justify-content: center;
+  }
+  form {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  #reset {
+    width: 100%;
+  }
+}

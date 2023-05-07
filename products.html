@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google heading fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- google paragraph fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- For caret down icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Icon in titlebar -->
+    <link rel="icon" href="Images/logo.png" type="image/x-icon">
+
+    <!-- title of the page -->
+    <title>Shazi's Decor</title>
+
+    <!-- Linking css file -->
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/products.css">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- navigation menu -->
+        <nav role="navigation">
+            <img src="Images/logo.png" alt="logo">
+            <h2 role="heading"><a class="headfonts" href="index.html">SHAZI'S DECOR</a></h2>
+            <ul class="headfonts">
+                <li><a class="headfonts" href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a class="headfonts" href="products.html">Products
+                            <!-- caret down symbol from Font Awesome library (Free icon library) -->
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a class="headfonts" href="products.html#kitchen">Kitchen</a>
+                            <a class="headfonts" href="products.html#livingRoom">Living Room</a>
+                            <a class="headfonts" href="products.html#bedRoom">Bed Room</a>
+                            <a class="headfonts" href="products.html#kidsRoom">Kids Room</a>
+                            <a class="headfonts" href="products.html#diningRoom">Dining Room</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="headfonts" href="about.html">About</a></li>
+                <li><a class="headfonts" href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- for hamburger icon in mobile view -->
+            <div class="dropdown">
+                <a id="hamburger" class="headfonts">
+                    <svg id="hamburger" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </a>
+                <div class="dropdown-content">
+                    <a id="close" class="headfonts">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                            class="bi bi-x" viewBox="0 0 16 16">
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </a>
+                    <a class="headfonts" href="index.html">Home</a>
+                    <div class="hamDropdown">
+                        <a class="headfonts" href="products.html"> <i class="fa fa-caret-left"></i>
+                            Products
+                            <!-- caret down symbol from Font Awesome library (Free icon library) -->
+
+                        </a>
+                        <div class="hamDropdown-content">
+                            <a class="headfonts" href="products.html#kitchen">Kitchen</a>
+                            <a class="headfonts" href="products.html#livingRoom">Living Room</a>
+                            <a class="headfonts" href="products.html#bedRoom">Bed Room</a>
+                            <a class="headfonts" href="products.html#kidsRoom">Kids Room</a>
+                            <a class="headfonts" href="products.html#diningRoom">Dining Room</a>
+                        </div>
+                    </div>
+                    <a class="headfonts" href="about.html">About</a>
+                    <a class="headfonts" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- main part -->
+        <main role="banner">
+            <section id="kitchen">
+                <img src="Images/kithcen.jpg" alt="Living Room Interior">
+                <div>
+                    <h1 class="headfonts">Kitchen Interior</h1>
+                    <p class="parafonts">
+                        We build modular kitchens well equipped with high functionality and efficiency using European
+                        precision. Our kitchens are designed to make space more spacious, functional, organized and
+                        ergonomically correct.We never forgot to maintain the aesthetics.
+                    </p>
+                </div>
+            </section>
+
+            <section id="livingRoom">
+
+                <img src="Images/living.jpg" alt="Living Room Interior">
+                <div>
+                    <h1 class="headfonts">Living Room Interior</h1>
+                    <p class="parafonts">
+                        If you don’t want the hassle of individually picking out furniture, our living room furniture
+                        sets are tailor-made for you. At Shazi's Decor, you don’t have to settle for something
+                        substandard. From recliners and side tables to sectional
+                        sofas and cabinets, our collection of living room furniture has everything you need at a
+                        reasonable prices.
+                    </p>
+                </div>
+            </section>
+
+            <section id="bedRoom" class="bg">
+                <img src="Images/bedroom (2).jpg" alt="">
+                <div>
+                    <h1 class="headfonts">Bed Room Interior</h1>
+                    <p class="parafonts"> Need a bedroom furniture set? You’re at
+                        the right place. We offer convenient bedroom furniture sets to help you avoid the hassle of
+                        finding
+                        matching sets of bedroom furniture. Shazi's Decor offers premium bedroom furniture to help you
+                        do just
+                        that.
+                    </p>
+                </div>
+            </section>
+
+            <section id="kidsRoom" class="bg">
+                <img src="Images/kids room2.jpg" alt="">
+                <div>
+                    <h1 class="headfonts">Kids Room Interior</h1>
+                    <p class="parafonts">
+                        We have furniture for your kids’ bedroom in countless fun colours and patterns.The different
+                        types of furniture available for kids rooms include beds, study tables, boards, storage
+                        cabinets, chairs, lamps, wall art, stickers, picture frames, bedding sets, and other
+                        furnishings.
+                    </p>
+                </div>
+            </section>
+
+            <section id="diningRoom" class="bg">
+                <img src="Images/dining.jpg" alt="">
+                <div>
+                    <h1 class="headfonts">Dining Room Interior</h1>
+                    <p class="parafonts">
+                        No matter the kind of furniture you need, our innovative and well thought-out dining room
+                        furniture designs will do the trick. Looking for the latest dining furniture design? You’re at
+                        the right place. Shazi's Decor offers beautiful modern dining furniture that fits the
+                        contemporary home like a glove.
+                    </p>
+                </div>
+            </section>
+
+            <section id="tableSection">
+                <h1 class="headfonts">Check Out The Affordable Furniture Price At Shazi's Decor</h1>
+                <table>
+                    <thead class="headfonts">
+                        <tr>
+                            <th>Category</th>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                            <th>Color Options</th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="parafonts">
+                        <tr>
+                            <td>Living Room</td>
+                            <td>Palermo Sofa Cum Bed</td>
+                            <td>₹18,199</td>
+                            <td>Comfy, soft Sofa cum Bed available at its lowest Price</td>
+                            <td>Floral, Olive Green, Lagoon Green, Salsa Red, Midnight Indigo Blue</td>
+                        </tr>
+                        <tr>
+                            <td>Living Room</td>
+                            <td>Chelsea Adjustable Sectional Sofa</td>
+                            <td>₹87,699 </td>
+                            <td>Right Aligned + 3 Seater</td>
+                            <td>Grey</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bed Room</td>
+                            <td>Tahiti Platform Bed</td>
+                            <td>₹31,949</td>
+                            <td>With a distinctive natural wood grain finish, an elegant frame, and a expansive low
+                                platform!</td>
+                            <td>Mahogany, Teak</td>
+                        </tr>
+
+                        <tr>
+                            <td>Bed Room</td>
+                            <td>Miller 3 Door Wardrobe</td>
+                            <td>₹25,999</td>
+                            <td>Also available in 2 Drawer, 1 Drawer, Without Drawer</td>
+                            <td>Smoked Walnut</td>
+                        </tr>
+
+                        <tr>
+                            <td>Kids Room</td>
+                            <td>Barnley Bunk Bed</td>
+                            <td> ₹25,758</td>
+                            <td>-</td>
+                            <td>Dark Walnut</td>
+                        </tr>
+
+                        <tr>
+                            <td>Dining Room</td>
+                            <td>8 Seater Dining Table Sets</td>
+                            <td> ₹53,126</td>
+                            <td>Upgrade the look and feel of your dining room with an extremely stylish 8 seater dining
+                                table.</td>
+                            <td>Golden Oak</td>
+                        </tr>
+
+                        <tr>
+                            <td>Dining Room</td>
+                            <td>4 Seater Dining Table Sets</td>
+                            <td> ₹28,520</td>
+                            <td> Dining Table with 4 comfirtable seats</td>
+                            <td>Brunt Orange, Teak, Avocado Green</td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Dining Room</td>
+                            <td>Bar Cabinets</td>
+                            <td> ₹19,949</td>
+                            <td>Set up a bar in the corner of your dining room</td>
+                            <td>Walnut, Teal</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+        </main>
+        <footer class="parafonts">
+            <p>
+                Copyright &copy; 2021 <strong> &nbsp; Saniya Memon-</strong> <em>All Rigths
+                    Reserved</em>
+            </p>
+            <div class="socialMedia">
+                <a class="headfonts" href="www.facebook.com"><i class="fa fa-facebook-square"
+                        aria-hidden="true"></i></a>
+                <a class="headfonts" href="www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a class="headfonts" href="www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
